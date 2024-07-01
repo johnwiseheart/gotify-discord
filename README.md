@@ -12,7 +12,8 @@ Either build and run yourself, or use it as a docker image. To provide config, y
 
 Using `docker compose`:
 
-```
+```yaml
+version: "3"
 services:
   gotify-discord:
     image: ghcr.io/johnwiseheart/gotify-discord:latest
@@ -23,3 +24,9 @@ services:
       - DISCORD_WEBHOOK=<webhook>
     restart: unless-stopped
 ```
+
+## Build it yourself
+
+1. Clone repo
+2. Run `yarn build`
+3. Run `yarn start`
